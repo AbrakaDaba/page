@@ -113,6 +113,10 @@ img {
   border-radius: 5px;
 }
 
+.a-btn-primary:hover {
+  background-color: black;
+}
+
 .a-btn-primary--green {
   background-color: #65bc7b;
 }
@@ -121,6 +125,10 @@ img {
   background-color: white;
   color: black;
   border: 2px solid black;
+}
+
+.a-btn-primary--inversed:hover {
+  background-color: #ededed;
 }
 
 .fa-solid, .fa-arrow-right {
