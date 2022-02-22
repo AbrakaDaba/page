@@ -4,3 +4,29 @@
     margin: 0 auto;
     padding: 0 20px;
 }
+
+
+.g-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-4{
+    flex-grow: 40%;
+}
+
+.col-6{
+    flex-grow: 60%;
+}
+
+@media only screen and (min-width: 1200px) {
+    .col-lg-4{
+        flex: 0 0 auto;
+        width: 40%;
+    }
+    
+    .col-lg-6{
+        flex: 0 0 auto;
+        width: 60%;
+    }
+  }

@@ -64,6 +64,10 @@ a {
   color: inherit;
 }
 
+html, body {
+  font-family: sans-serif;
+}
+
 .g-container {
   width: 100%;
   max-width: 1320px;
@@ -71,13 +75,52 @@ a {
   padding: 0 20px;
 }
 
-.bg-dark {
-  background-color: #333;
-  color: white;
+.g-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.col-4 {
+  -webkit-box-flex: 40%;
+      -ms-flex-positive: 40%;
+          flex-grow: 40%;
+}
+
+.col-6 {
+  -webkit-box-flex: 60%;
+      -ms-flex-positive: 60%;
+          flex-grow: 60%;
+}
+
+@media only screen and (min-width: 1200px) {
+  .col-lg-4 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 40%;
+  }
+  .col-lg-6 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 60%;
+  }
+}
+
+.h-pl-10 {
+  padding-left: 10px;
+}
+
+.h-pr-10 {
+  padding-right: 10px;
 }
 
 .m-header {
-  padding: 30px 0;
+  padding: 36px 0;
+  margin-bottom: 15px;
 }
 
 .m-header__wrapper {
@@ -94,6 +137,186 @@ a {
 
 .m-header__logo {
   width: 165px;
+}
+
+.m-intro__title-wrapper {
+  margin-bottom: 30px;
+}
+
+.m-intro__title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.m-intro__title--animation {
+  position: relative;
+  display: inline-block;
+}
+
+.m-intro__title--animation:before {
+  display: block;
+  overflow: visible;
+  line-height: 1.5;
+  padding-right: 5px;
+  padding-left: 5px;
+  content: "WordPress";
+  color: transparent;
+  -webkit-animation: multi-title 20s linear 2s infinite;
+          animation: multi-title 20s linear 2s infinite;
+}
+
+.m-intro__title--animation:after {
+  display: block;
+  line-height: 1.5;
+  position: absolute;
+  width: 105%;
+  padding-right: 5px;
+  padding-left: 5px;
+  top: 0;
+  left: 0;
+  content: "WordPress";
+  border-right: 2px solid black;
+  overflow: hidden;
+  -webkit-animation: multi-title 20s linear 2s infinite;
+          animation: multi-title 20s linear 2s infinite;
+}
+
+.m-intro__desc {
+  font-size: 19px;
+  line-height: 1.7em;
+  margin-bottom: 40px;
+  max-width: 60%;
+}
+
+.m-intro__cta {
+  padding: 10px 30px;
+  margin-bottom: 50px;
+}
+
+.m-intro__divider {
+  margin-bottom: 50px;
+}
+
+.m-intro__results {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.m-intro__result {
+  margin-right: 20px;
+}
+
+.m-intro__result-num {
+  line-height: 1.15;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.m-intro__result-desc {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+@-webkit-keyframes multi-title {
+  0% {
+    width: 100%;
+  }
+  12% {
+    content: "WordPress";
+    width: 0px;
+  }
+  13% {
+    content: "OnlineStore";
+  }
+  25% {
+    content: "OnlineStore";
+    width: 100%;
+  }
+  37% {
+    content: "OnlineStore";
+    width: 0px;
+  }
+  38% {
+    content: "Creative";
+  }
+  50% {
+    content: "Creative";
+    width: 100%;
+  }
+  62% {
+    content: "Creative";
+    width: 0px;
+  }
+  63% {
+    content: "Portfolio";
+  }
+  75% {
+    content: "Portfolio";
+    width: 100%;
+  }
+  87% {
+    content: "Portfolio";
+    width: 0%;
+  }
+  88% {
+    content: "WordPress";
+  }
+  100% {
+    content: "WordPress";
+    width: 100%;
+  }
+}
+
+@keyframes multi-title {
+  0% {
+    width: 100%;
+  }
+  12% {
+    content: "WordPress";
+    width: 0px;
+  }
+  13% {
+    content: "OnlineStore";
+  }
+  25% {
+    content: "OnlineStore";
+    width: 100%;
+  }
+  37% {
+    content: "OnlineStore";
+    width: 0px;
+  }
+  38% {
+    content: "Creative";
+  }
+  50% {
+    content: "Creative";
+    width: 100%;
+  }
+  62% {
+    content: "Creative";
+    width: 0px;
+  }
+  63% {
+    content: "Portfolio";
+  }
+  75% {
+    content: "Portfolio";
+    width: 100%;
+  }
+  87% {
+    content: "Portfolio";
+    width: 0%;
+  }
+  88% {
+    content: "WordPress";
+  }
+  100% {
+    content: "WordPress";
+    width: 100%;
+  }
 }
 
 .m-articles {
@@ -201,6 +424,14 @@ a {
   background: #d7b921;
 }
 
+.m-articles__item--green {
+  background: #6bc63e;
+}
+
+.m-articles__item--blue {
+  background: #2fa5ca;
+}
+
 .btn-title {
   text-align: center;
   padding: 20px;
@@ -244,4 +475,3 @@ a {
 .fa-solid, .fa-arrow-right {
   padding: 0 5px;
 }
-/*# sourceMappingURL=main.css.map */
