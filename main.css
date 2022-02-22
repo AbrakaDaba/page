@@ -96,50 +96,6 @@ a {
   width: 165px;
 }
 
-<<<<<<< Updated upstream
-.btn-title {
-  text-align: center;
-  padding: 20px;
-  font-size: 25px;
-}
-
-.a-btn-primary {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  text-decoration: none;
-  display: block;
-  width: 210px;
-  background-color: #282828;
-  margin-bottom: 20px;
-  position: relative;
-  left: 20px;
-  color: white;
-  font-size: 18px;
-  padding: 20px;
-  text-align: center;
-  border-radius: 5px;
-}
-
-.a-btn-primary:hover {
-  background-color: black;
-}
-
-.a-btn-primary--green {
-  background-color: #65bc7b;
-}
-
-.a-btn-primary--inversed {
-  background-color: white;
-  color: black;
-  border: 2px solid black;
-}
-
-.a-btn-primary--inversed:hover {
-  background-color: #ededed;
-}
-
-.fa-solid, .fa-arrow-right {
-  padding: 0 5px;
-=======
 .m-articles {
   padding: 30px 0;
 }
@@ -243,6 +199,49 @@ a {
 
 .m-articles__item--yellow {
   background: #d7b921;
->>>>>>> Stashed changes
+}
+
+.btn-title {
+  text-align: center;
+  padding: 20px;
+  font-size: 25px;
+}
+
+.a-btn-primary {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  display: block;
+  width: 210px;
+  background-color: #282828;
+  margin-bottom: 20px;
+  position: relative;
+  left: 20px;
+  color: white;
+  font-size: 18px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.a-btn-primary:hover {
+  background-color: black;
+}
+
+.a-btn-primary--green {
+  background-color: #65bc7b;
+}
+
+.a-btn-primary--inversed {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.a-btn-primary--inversed:hover {
+  background-color: #ededed;
+}
+
+.fa-solid, .fa-arrow-right {
+  padding: 0 5px;
 }
 /*# sourceMappingURL=main.css.map */
