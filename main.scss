@@ -1,13 +1,19 @@
-@import './assets/scss/abstracts/variables';
 @import './assets/scss/base/reset';
+@import './assets/scss/base/typo';
+@import './assets/scss/abstracts/variables';
 @import './assets/scss/layout/grid';
+@import './assets/scss/base/helper';
 
 
 @import './assets/scss/abstracts/colors';
 @import './assets/scss/abstracts/mixins';
 
 @import "./assets/scss/base/header";
-@import "./assets/scss/base/articles";
+
+
+
+@import "./assets/scss/sections/intro";
+@import "./assets/scss/sections/articles";
 
 @import "./assets/scss/components/buttons";
 
