@@ -396,7 +396,7 @@ html, body {
   line-height: 1.16;
   text-align: center;
   font-family: "Basier Square Semi Bold";
-  font-weight: 400;
+  font-weight: 600;
   text-transform: capitalize;
   margin-top: 15px;
 }
@@ -478,7 +478,6 @@ html, body {
 .fa-solid, .fa-arrow-right {
   padding: 0 5px;
 }
-<<<<<<< Updated upstream
 
 .m-nav__list {
   display: -webkit-box;
@@ -510,6 +509,4 @@ html, body {
 .m-nav__link:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
-=======
 /*# sourceMappingURL=main.css.map */
->>>>>>> Stashed changes
