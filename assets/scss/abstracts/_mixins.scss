@@ -1,6 +1,36 @@
-@mixin small-padding{
+@mixin small-padding {
     padding-top: 3px;
     padding-bottom: 3px;
     padding-left: 7px;
     padding-right: 7px;
+}
+
+@mixin intro-title {
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@mixin card-title {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 1px;
+    font-family: "Basier Square Semi Bold";
+}
+@mixin card-subtitle {
+    font-size: 32px;
+    line-height: 1.16;
+    text-align: center;
+    font-family: "Basier Square Semi Bold";
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+@mixin section-title {
+    margin: 0;
+    font-size: 48px;
+    line-height: 1.08;
+    font-family: Arial, Helvetica, sans-serif;
 }
