@@ -4,37 +4,17 @@
     font-size: 25px;
 }
 .a-btn-primary {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-decoration: none;
-    display: block;
-    width: 210px;
-    background-color: #282828;
-    margin-bottom: 20px;
-    position: relative;
-    left:20px;
-    color: white;
-    font-size: 18px;
-    padding: 20px;
-    text-align: center;
-    border-radius: 5px;
-
-    &:hover {
-        background-color: black;
-    }
-
-    &--green {
-        background-color: #65bc7b;
-    }
-    &--inversed {
-        background-color: white;
-        color: black;
-        border: 2px solid black;
-        &:hover {
-            background-color: rgb(237, 237, 237);
-        }
-    }
+    @include decoration;
 }
 
 .fa-solid, .fa-arrow-right {
 padding: 0 5px;
+}
+
+.random-div {
+    @include decoration;
+}
+
+.random-btn {
+    @include decoration;
 }
