@@ -334,7 +334,6 @@ html, body {
 
 .m-articles__card {
   width: calc((100% - 40px) / 3);
-  height: 600px;
   border-radius: 5px;
   padding: 65px 55px 55px;
 }
@@ -384,17 +383,21 @@ html, body {
 }
 
 .m-articles__title {
+  text-align: center;
   font-size: 15px;
-  line-height: 1em;
-  font-weight: 600;
-  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.16;
+  letter-spacing: 1px;
+  font-family: "Basier Square Semi Bold";
 }
 
 .m-articles__text {
   font-size: 32px;
   line-height: 1.16;
-  font-weight: 600;
-  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-family: "Basier Square Semi Bold";
+  font-weight: 400;
+  text-transform: capitalize;
   margin-top: 15px;
 }
 
@@ -475,6 +478,7 @@ html, body {
 .fa-solid, .fa-arrow-right {
   padding: 0 5px;
 }
+<<<<<<< Updated upstream
 
 .m-nav__list {
   display: -webkit-box;
@@ -506,3 +510,6 @@ html, body {
 .m-nav__link:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
+=======
+/*# sourceMappingURL=main.css.map */
+>>>>>>> Stashed changes
