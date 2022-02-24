@@ -1,20 +1,64 @@
+$primary-button: $c-black2;
+$secondary-button: $c-green2;
+$inversed-button: $c-white;
+$hover-button: $c-black;
+$button-text: $c-white;
+$button-text2: $c-black;
+$inversed-hover: $c-white2;
+
+
+@mixin primary-btn {
+    font-family: $lucida-font;
+    text-decoration: none;
+    display: block;
+    background-color: $primary-button;
+    position: relative;
+    color: $button-text;
+    font-size: 18px;
+    padding: 20px 31px;
+    text-align: center;
+    border-radius: 5px; 
+    &--green {
+        background-color: $secondary-button;
+    }
+    &:hover {
+        background-color: $hover-button;
+    }
+    &--inversed {
+        background-color: $inversed-button;
+        color: $button-text2;
+        border: 2px solid $c-black;
+        padding: 17px 28px;
+        &:hover {
+            background-color: $inversed-hover;
+        }
+    }
+    .fa-solid, .fa-arrow-right {
+    padding: 0 5px;
+    }
+}
+
 .btn-title {
     text-align: center;
     padding: 20px;
     font-size: 25px;
 }
 .a-btn-primary {
-    @include decoration;
-}
-
-.fa-solid, .fa-arrow-right {
-padding: 0 5px;
+    @include primary-btn;
 }
 
 .random-div {
-    @include decoration;
+    @include primary-btn;
+    margin-bottom: 20px;
+    left:20px;
+    max-width: 240px;
 }
 
-.random-btn {
-    @include decoration;
+.btn-demo-wrapper {
+    .a-btn-primary {
+        margin-bottom: 20px;
+        max-width: 240px;
+        left:20px
+    }
+  
 }

@@ -1,5 +1,7 @@
+//variables
+$active-hover-slider: $c-white3;
+
 .m-slider {
-    margin-bottom: 30px;
     &__wrapper {
         display: flex;
     }
@@ -12,32 +14,31 @@
     justify-content: left;
     margin-right: 40px;
   &__item {
-      border: none;
-      text-align: left;
-      margin-bottom: 10px;
-      padding: 20px;
-      font-size: 19px;
-      background-color: white;
-      border-radius: 5px;
-      &:hover {
-          background-color: #f4f5f7;
-      }
+    font-family: $arial-font;
+    border: none;
+    text-align: left;
+    margin-bottom: 10px;
+    padding: 20px;
+    font-size: 19px;
+    background-color: $c-white;
+    border-radius: 5px;
+    &:hover {
+        background-color: $active-hover-slider;
+    }
   }
 }
 
 .active {
-background-color: #f4f5f7;
+background-color: $active-hover-slider;
 }
 
 .m-slider-images {
     width: calc(100% - 315px);
     margin: 0 auto;
-    // border: 1px solid black;
     overflow: hidden;
     position: relative;
     display: flex;
     &__wrap {
-        // min-width: 924px;
         display: none;
         width: 100%;
     }

@@ -118,6 +118,97 @@ html, body {
   padding-right: 10px;
 }
 
+.h-mb-section {
+  margin-bottom: 95px;
+}
+
+.btn-title {
+  text-align: center;
+  padding: 20px;
+  font-size: 25px;
+}
+
+.a-btn-primary {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  display: block;
+  background-color: #282828;
+  position: relative;
+  color: #fff;
+  font-size: 18px;
+  padding: 20px 31px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.a-btn-primary--green {
+  background-color: #65bc7b;
+}
+
+.a-btn-primary:hover {
+  background-color: #000;
+}
+
+.a-btn-primary--inversed {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+  padding: 17px 28px;
+}
+
+.a-btn-primary--inversed:hover {
+  background-color: #ededed;
+}
+
+.a-btn-primary .fa-solid, .a-btn-primary .fa-arrow-right {
+  padding: 0 5px;
+}
+
+.random-div {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  display: block;
+  background-color: #282828;
+  position: relative;
+  color: #fff;
+  font-size: 18px;
+  padding: 20px 31px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  left: 20px;
+  max-width: 240px;
+}
+
+.random-div--green {
+  background-color: #65bc7b;
+}
+
+.random-div:hover {
+  background-color: #000;
+}
+
+.random-div--inversed {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+  padding: 17px 28px;
+}
+
+.random-div--inversed:hover {
+  background-color: #ededed;
+}
+
+.random-div .fa-solid, .random-div .fa-arrow-right {
+  padding: 0 5px;
+}
+
+.btn-demo-wrapper .a-btn-primary {
+  margin-bottom: 20px;
+  max-width: 240px;
+  left: 20px;
+}
+
 .m-header {
   padding: 36px 0;
   margin-bottom: 15px;
@@ -192,6 +283,11 @@ html, body {
 .m-intro__cta {
   padding: 10px 30px;
   margin-bottom: 50px;
+}
+
+.m-intro .a-btn-primary {
+  max-width: 240px;
+  margin-bottom: 20px;
 }
 
 .m-intro__divider {
@@ -438,118 +534,6 @@ html, body {
   background: #2fa5ca;
 }
 
-.btn-title {
-  text-align: center;
-  padding: 20px;
-  font-size: 25px;
-}
-
-.a-btn-primary {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  text-decoration: none;
-  display: block;
-  width: 210px;
-  background-color: #282828;
-  margin-bottom: 20px;
-  position: relative;
-  left: 20px;
-  color: white;
-  font-size: 18px;
-  padding: 20px;
-  text-align: center;
-  border-radius: 5px;
-}
-
-.a-btn-primary--green {
-  background-color: #65bc7b;
-}
-
-.a-btn-primary:hover {
-  background-color: black;
-}
-
-.a-btn-primary--inversed {
-  background-color: white;
-  color: black;
-  border: 2px solid black;
-}
-
-.a-btn-primary--inversed:hover {
-  background-color: #ededed;
-}
-
-.fa-solid, .fa-arrow-right {
-  padding: 0 5px;
-}
-
-.random-div {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  text-decoration: none;
-  display: block;
-  width: 210px;
-  background-color: #282828;
-  margin-bottom: 20px;
-  position: relative;
-  left: 20px;
-  color: white;
-  font-size: 18px;
-  padding: 20px;
-  text-align: center;
-  border-radius: 5px;
-}
-
-.random-div--green {
-  background-color: #65bc7b;
-}
-
-.random-div:hover {
-  background-color: black;
-}
-
-.random-div--inversed {
-  background-color: white;
-  color: black;
-  border: 2px solid black;
-}
-
-.random-div--inversed:hover {
-  background-color: #ededed;
-}
-
-.random-btn {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  text-decoration: none;
-  display: block;
-  width: 210px;
-  background-color: #282828;
-  margin-bottom: 20px;
-  position: relative;
-  left: 20px;
-  color: white;
-  font-size: 18px;
-  padding: 20px;
-  text-align: center;
-  border-radius: 5px;
-}
-
-.random-btn--green {
-  background-color: #65bc7b;
-}
-
-.random-btn:hover {
-  background-color: black;
-}
-
-.random-btn--inversed {
-  background-color: white;
-  color: black;
-  border: 2px solid black;
-}
-
-.random-btn--inversed:hover {
-  background-color: #ededed;
-}
-
 .m-nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -581,10 +565,6 @@ html, body {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-.m-slider {
-  margin-bottom: 30px;
-}
-
 .m-slider__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -607,12 +587,13 @@ html, body {
 }
 
 .m-slider-nav__item {
+  font-family: Arial, Helvetica, sans-serif;
   border: none;
   text-align: left;
   margin-bottom: 10px;
   padding: 20px;
   font-size: 19px;
-  background-color: white;
+  background-color: #fff;
   border-radius: 5px;
 }
 
